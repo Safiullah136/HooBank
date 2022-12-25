@@ -1,0 +1,86 @@
+.client {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 370px;
+  height: 100%;
+  margin-right: 2rem;
+  padding: 3.75rem 2.5rem;
+}
+
+.client:hover {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+}
+
+.client:nth-of-type(1):hover {
+  background: inherit;
+}
+
+.client-background {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+}
+
+.client p {
+  margin-top: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.client-info {
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.client-info img {
+  margin-right: 1rem;
+}
+
+.client-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-name h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+
+  color: #ffffff;
+}
+
+.client-name p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+
+  color: #ffffff;
+  opacity: 0.5;
+}

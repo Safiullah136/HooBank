@@ -1,0 +1,276 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.pink-gradient {
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  top: 0;
+  z-index: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(26, 41, 128, 0.5) 0%,
+    rgba(38, 208, 206, 0.5) 100%
+  );
+  filter: blur(900px);
+}
+
+.white-gradient {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+  bottom: 10rem;
+  border-radius: 9999px;
+
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.blue-gradient {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 0;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  border: 1px solid #000000;
+  filter: blur(123px);
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  border-radius: 10px;
+  max-width: 420px;
+  padding: 6px 1rem;
+}
+
+.discount p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0 0 0 0.5rem;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.discount span {
+  color: #ffffff;
+}
+
+.heading {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heading h1,
+.payment-method {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  margin: 0;
+
+  color: #ffffff;
+}
+
+.heading span {
+  background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  margin-top: 1.25rem;
+  max-width: 470px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.get-started {
+  display: block;
+  cursor: pointer;
+}
+
+.features {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.features > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.features h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 40.8925px;
+  line-height: 130%;
+  margin-right: 25.56px;
+
+  color: #ffffff;
+}
+
+.features p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20.4463px;
+  line-height: 130%;
+  margin-right: 52.82px;
+
+  text-transform: uppercase;
+
+  background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.features > div div {
+  width: 15.63px;
+  height: 0px;
+  margin-right: 52.82px;
+
+  border: 1.70386px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(90deg);
+}
+
+.get-started__bahir {
+  display: none;
+  cursor: pointer;
+}
+
+.generation-line__break {
+  display: block;
+}
+
+@media screen and (max-width: 1060px) {
+  .home-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .text {
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .features {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .heading h1,
+  .payment-method {
+    line-height: 75px;
+    font-size: 52px;
+  }
+
+  .get-started {
+    display: none;
+  }
+
+  .get-started__bahir {
+    display: block;
+    margin: auto;
+  }
+
+  .generation-line__break {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-right: 1rem;
+  }
+
+  .features p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 2.5rem;
+  }
+}

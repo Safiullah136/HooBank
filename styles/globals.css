@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Poppins&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #00040f;
+  overflow-x: hidden;
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 a {
@@ -13,6 +25,12 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.section-padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +40,12 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-padding {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
